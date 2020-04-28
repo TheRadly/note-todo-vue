@@ -1,0 +1,25 @@
+$margin-top: 50px;
+
+#home {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.note-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: $margin-top;
+  width: 100%;
+}
+.list-empty {
+  font-size: 26px;
+  margin-top: $margin-top;
+}

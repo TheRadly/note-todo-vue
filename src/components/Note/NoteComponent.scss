@@ -1,0 +1,50 @@
+$border: 1px solid black;
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.note {
+  position: relative;
+  padding: 20px;
+  border: $border;
+  margin: 10px;
+  background-color: #fffecb;
+  border-radius: 10px;
+}
+.note-container {
+  cursor: pointer;
+}
+.done-todo {
+  text-decoration: line-through;
+}
+.delete-button {
+  position: absolute;
+  border-radius: 50%;
+  top: -10px;
+  border: $border;
+  width: 25px;
+  height: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: white;
+  right: -12px;
+  &:hover {
+    background-color: rgb(253, 95, 95);
+    color: white;
+  }
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 10px;
+}
+a {
+  color: #42b983;
+}

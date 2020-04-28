@@ -1,0 +1,113 @@
+$font-size: 14px;
+$border-radius: 10px;
+$margin-top: 10px;
+$border: 1px solid gray;
+$button-background-color: rgb(253, 95, 95);
+
+#edit-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.edit-note-name {
+  margin-top: $margin-top;
+}
+.edit-note-name button {
+  @extend .delete-button;
+  position: relative !important;
+  right: 0px !important;
+}
+.checkbox-todo {
+  position: absolute;
+  left: -15%;
+  top: -10px;
+}
+.todo-span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.done-todo {
+  text-decoration: line-through;
+}
+.input-error {
+  color: red;
+}
+.edit-todos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.edit-fields {
+  margin-top: $margin-top;
+  background-color: #fffecb;
+  border: $border;
+  border-radius: 5px;
+  padding: 40px;
+  margin-top: 25px;
+}
+.delete-button {
+  position: absolute;
+  border: $border;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  padding: 0;
+  background-color: white;
+  line-height: font;
+  font-size: 12px;
+  right: -50px;
+  &:hover {
+    background-color: $button-background-color;
+    color: white;
+  }
+}
+.change-button {
+  @extend .delete-button;
+  right: -25px;
+}
+.action-buttons {
+  margin-top: 25px;
+}
+.add-todo-fields {
+  @extend .edit-todos;
+}
+.edit-todo-input {
+  width: 100%;
+  margin-top: 0;
+}
+input {
+  border-radius: $border-radius;
+  border: $border;
+  height: 20px;
+  font-size: $font-size;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+button {
+  width: 100px;
+  height: 25px;
+  font-size: $font-size;
+  border-radius: $border-radius;
+  margin-left: 10px;
+  &:hover {
+    background-color: rgb(219, 219, 219);
+    cursor: pointer;
+  }
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  position: relative;
+  display: flex;
+  text-align: left;
+  word-break: break-all;
+  margin: 0 10px;
+  width: 200px;
+}
